@@ -4,13 +4,12 @@ import { Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import "./App.css";
-import Dashboard from "./pages/Dashboard";
-import Diabetes from "./pages/Diabetes";
-import Heart from "./pages/Heart";
-import Pneumonia from "./pages/Pneumonia";
-import History from "./pages/History";
-import ModelPerformance from "./pages/ModelPerformance";
-
+import Dashboard from "./pages/dashboard.jsx";
+import Diabetes from "./pages/Diabetes.jsx";
+import Heart from "./pages/Heart.jsx";
+import Pneumonia from "./pages/Pneumonia.jsx";
+import History from "./pages/History.jsx";
+import ModelPerformance from "./pages/ModelPerformance.jsx";
 function Home() {
 
   const [backendStatus, setBackendStatus] = useState("Checking...");
