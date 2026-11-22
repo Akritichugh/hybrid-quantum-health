@@ -1,0 +1,119 @@
+
+.heart-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  padding: 40px 24px;
+  font-family: Arial, sans-serif;
+  color: #0f172a;
+}
+
+.heart-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heart-header {
+  margin-bottom: 30px;
+}
+
+.heart-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.heart-header p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.heart-form {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.heart-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heart-form label {
+  font-weight: 600;
+  color: #334155;
+  font-size: 14px;
+}
+
+.heart-form input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.heart-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.heart-form button {
+  grid-column: 1 / -1;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heart-form button:hover {
+  background: #1d4ed8;
+}
+
+.heart-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.prediction-result {
+  margin-top: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.prediction-result h2 {
+  margin-top: 0;
+}
+
+.prediction-result small {
+  color: #64748b;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+@media (max-width: 650px) {
+  .heart-form {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .heart-header h1 {
+    font-size: 26px;
+  }
+}
