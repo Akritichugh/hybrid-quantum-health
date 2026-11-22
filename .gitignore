@@ -22,3 +22,5 @@ ml/datasets/
 # Local files
 .DS_Store
 Thumbs.db
+
+backend/quantumhealth.db
